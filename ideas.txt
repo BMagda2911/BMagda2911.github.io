@@ -1,0 +1,25 @@
+color scheme: (here with SCSS)
+$primary-1: #799182;
+$primary-2: #FB8F8A;
+$primary-3: #1B1|
+
+scss
+$color-1: #70927c;
+$color-2: #70928d;
+$color-3: #708692;
+$color-4: #707592;
+$color-5: #7c7092;
+$color-6: #8d7092;
+
+hex
+#70927c
+#70928d
+#708692
+#707592
+#7c7092
+#8d7092
+
+
+A theme-feel like this: https://themes.getbootstrap.com/preview/?theme_id=60718
+
+Keywords: Lift Leap Land
