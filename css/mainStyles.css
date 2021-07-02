@@ -1,0 +1,90 @@
+/* Individual website variables*/
+:root {
+  --eucalyptus: #9ca89e;
+  --sagebrush: #517470;
+  --tanglewood: #C4BDB1;
+  --danger: #dc3545;
+  --light: #7c827d;
+  --dark: #6e756f;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+body {
+  background-color: var(--eucalyptus);
+}
+
+a {
+  text-decoration: none;
+  color: #C4BDB1;
+}
+
+/* Navigation bar */
+.nav-custom-styles {
+  background-color: var(--eucalyptus);
+}
+
+.navigation {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-self: center;
+}
+
+/* most needed styles */
+
+.bg-eucalyptus {
+  background-color: var(--eucalyptus);
+}
+
+.bg-sagebrush {
+  background-color: #517470;
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.text_light {
+  color: var(--light);
+}
+
+.text_dark {
+  color: var(--dark);
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.primary-link {
+  color: white;
+}
+
+.primary-link:hover{
+  opacity: .5;
+  color: #C4BDB1;
+}
+
+.horizontal-spacer {
+  padding: 50px 0;
+}
+
+.haze-overlay {
+  opacity: .6;
+}
+
+.img-size {
+  width: 100%;
+  /* height: 60%;*/
+} 
+
+.get-in-touch_button {
+  margin: 0 450px;
+}
