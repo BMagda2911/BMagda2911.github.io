@@ -13,8 +13,16 @@
   --breakpoint-xl: 1200px;
 }
 
-body {
+.main-content {
   background-color: var(--eucalyptus);
+
+  
+}
+
+main {
+  background-color: white;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 a {
@@ -73,7 +81,7 @@ a {
 }
 
 .horizontal-spacer {
-  padding: 50px 0;
+  padding: 0px 0;
 }
 
 .haze-overlay {
@@ -82,7 +90,6 @@ a {
 
 .header-image {
   width: 100%;
-  /* height: 60%;*/
 } 
 
 .get-in-touch_button {
@@ -90,14 +97,16 @@ a {
 }
 
 .portfolio-project-cards {
-  width: 80%;
+  margin-top: 50px;
 }
+
+.about-container {
+  padding: 100px 0px;
+}
+
 
 /* try out */
 
-.container {
-  max-width:1200px;
-}
 .headerImageContent {
   position: absolute;
   top: 50%;
@@ -117,5 +126,11 @@ a {
   }
   .nav-custom-styles {
     margin-bottom: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .mobile-width {
+    width: 85%;
   }
 }

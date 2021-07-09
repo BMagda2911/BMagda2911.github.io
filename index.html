@@ -11,41 +11,77 @@
   </head>
   <body>
     <div class="navbar-head">
-      <nav class="navbar navbar-fluid navbar-expand-lg text-white nav-custom-styles" aria-label="">
-        <div class="navigation">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/MB_logo.png" alt="website logo" class="rounded w-50 h-50 d-inline-block logo">
-            </a>
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active text-white" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#contact">Contact</a>
-              </li>
-            </ul>
+      <nav class="navbar navbar-expand-lg navbar-light nav-custom-styles">
+        <div class="container">
+          <a class="navbar-brand mobile-width" href="index.html">
+            <img src="images/MB_logo.png" alt="website logo" class="rounded w-50 h-50 d-inline-block logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-white">
+              <a class="nav-item nav-link" href="#">About</a>
+              <a class="nav-item nav-link" href="#projects">Projects</a>
+              <a class="nav-item nav-link" href="#">Experience</a>
+              <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
+    <section>
+      <!-- <div class="container mb-3"> -->
+        <div class="row">
+          <div class="">
+            <img src="images/ian-schneider-TamMbr4okv4-unsplash.jpg" alt="" class="img-fluid header-image haze-overlay">
+            <div class="headerImageContent text-dark">
+              <h1>Hello, I'm Magdalena,</h1>
+              <h4>
+                a front-end web developer from Graz, Austria.
+              </h4>
+              <a href="#about" class="btn btn-lg bg-sagebrush primary-link mt-4 mb-4">Get to know me</a>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </section>
+<main>
+    <div class="container-fluid main-content">
+      
 
-    <div class="container-fluid">
-      <section>
-        <div class="container mt-3 mb-3">
-          <div class="row">
-            <div class="col-sm-12">
-              <img src="images/olivier-mary-aS2qG7sJAYc-unsplash.jpg" alt="" class="img-fluid header-image haze-overlay">
-              <div class="headerImageContent text-dark container-fluid">
-                <h1>Hello, I'm Magdalena.</h1>
-                <p class="">
-                  A front-end web developer from Graz, Austria.
-                </p>
-                <a href="#contact" class="btn btn-lg bg-sagebrush primary-link mt-4 mb-4 get-in-touch_button">Get In Touch</a>
+      <!-- about me section -->
+      <section id="about">
+        <div class="container about-container">
+          <div class="row d-flex">
+            <div class="col-md-6 col-lg-6 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="d-flex align-self-stretch">
+                  <img src="images/Profile-img-Magda.jpg" alt="Profile image of Magdalena" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 pl-md-5 py-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12">
+                  <h2 class="mb-4">About Me</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus maximus augue ut commodo. Nam a tristique quam. Duis nec ligula nec sem elementum faucibus. Praesent odio purus, vehicula quis libero ac, venenatis interdum arcu. Aliquam gravida at purus et euismod. Nunc vulputate turpis ex, nec tempor mauris commodo non.</p>
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex"><span>Name:</span> <span>Magdalena Bijelic</span></li>
+                    <li class="d-flex"><span>Date of birth:</span> <span>November 29, 1991</span></li>
+                    <li class="d-flex"><span>City:</span> <span>Graz, Austria</span></li>
+                    <li class="d-flex"><span>Zip code:</span> <span>8020</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex mt-md-3">
+                <div class="text">
+                  <p class="mb-4">
+                    <span class="number" data-number="10">10</span>
+                    <span>Projects completed</span>
+                  </p>
+                  <p><a href="#about" target="_blank" class="btn bg-sagebrush primary-link py-3 px-3">View my CV</a></p>
+                </div>
               </div>
             </div>
           </div>
@@ -53,10 +89,9 @@
       </section>
 
 
+      <!-- projects section -->
       <section class="portfolio-project-cards">
-
-        <div class="pt-0">
-          <div class="container-fluid horizontal-spacer">
+          <div class="container horizontal-spacer">
             <div class="row mb-3" data-aos="fade-up">
               <div class="col-md-7">
                 <a class="fade-page" href="home-coworking.html">
@@ -64,7 +99,7 @@
                 </a>
               </div>
               <div class="col">
-                <div class="row justify-content-center">
+                <div class="row">
                   <div class="col-xl-9 col-lg-10">
                     <a href="home-coworking.html" class="fade-up">
                       <h3 class="text_dark no-decoration">Coworking</h3>
@@ -95,7 +130,7 @@
                 </a>
               </div>
               <div class="col">
-                <div class="row justify-content-center">
+                <div class="row">
                   <div class="col-xl-9 col-lg-10">
                     <a href="home-coworking.html" class="fade-up">
                       <h3 class="text_dark no-decoration">Coworking</h3>
@@ -126,7 +161,7 @@
                 </a>
               </div>
               <div class="col">
-                <div class="row justify-content-center">
+                <div class="row">
                   <div class="col-xl-9 col-lg-10">
                     <a href="home-coworking.html" class="fade-up">
                       <h3 class="text_dark no-decoration">Coworking</h3>
@@ -158,7 +193,7 @@
                 </a>
               </div>
               <div class="col">
-                <div class="row justify-content-center">
+                <div class="row">
                   <div class="col-xl-9 col-lg-10">
                     <a href="home-coworking.html" class="fade-up">
                       <h3 class="text_dark no-decoration">Coworking</h3>
@@ -181,40 +216,36 @@
                 </div>
               </div>
             </div>
-
           </div>
-        </div>
       </section>
+    </div>
+  </main>
 
-     
-      <!-- footer -->
-      
-      <footer class="footer bg-eucalyptus text-white shape-parent overflow-hidden text-center">
-        <div class="container pt-4">
-            <ul class="nav align-items-center flex-column text-white mb-100">
-                <li class="nav-item">
-                    <a href="mailto:magdalenabijelic@gmail.com" class="nav-link h4 mt-8 mt-md-0 primary-link">magdalenabijelic@gmail.com</a>
-                </li>
-            </ul>
-            <p>Follow my work on Github or look me up on LinkedIn</p>
-            <ul id="contact" class="nav nav-social nav-gap-sm align-items-center justify-content-center mb-30">
+    <!-- footer -->
+    <footer class="page-footer bg-eucalyptus text-white overflow-hidden text-center">
+      <div class="">
+          <ul class="nav align-items-center flex-column text-white mb-100">
               <li class="nav-item">
-                <a href="">
-                  <img src="images/svgs/icons8-github.svg" alt="Github icon and link">
-                </a>
+                  <a href="mailto:magdalenabijelic@gmail.com" class="nav-link h4 mt-8 mt-md-0 primary-link">magdalenabijelic@gmail.com</a>
               </li>
-              <li class="nav-item">
-                  <a href="https://www.linkedin.com/in/magdalena-bijeli%C4%87-885507192/" target="_blank" class="nav-link">
-                      <img src="images/svgs/linkedin.svg" alt="linkedin icon and link" style="width: 30px; color: white;">
-                  </a>
-              </li>
-              <li class="nav-item">
-                <p class="copyright">&copy;2021 Magdalena B.</p>
-              </li>
-            </ul> 
-        </div>
-      </footer>
-      <!-- /footer -->
+          </ul>
+          <p>Follow my work on Github or look me up on LinkedIn</p>
+          <ul id="contact" class="nav nav-social nav-gap-sm align-items-center justify-content-center mb-30">
+            <li class="nav-item">
+              <a href="https://github.com/BMagda2911">
+                <img src="images/svgs/icons8-github.svg" alt="Github icon and link" style="width: 40px;">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/in/magdalena-bijeli%C4%87-885507192/" target="_blank" class="nav-link">
+                  <img src="images/svgs/linkedin.svg" alt="Linkedin icon and link" style="width: 30px;">
+              </a>
+            </li>
+          </ul>
+          <p class="copyright pt-4 pb-4">&copy;2021 Magdalena Bijelic</p> 
+      </div>
+    </footer>
+    <!-- /footer -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
