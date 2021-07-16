@@ -3,7 +3,7 @@
   --eucalyptus: #9ca89e;
   --sagebrush: #517470;
   --tanglewood: #C4BDB1;
-  --danger: #dc3545;
+  --danger: #e2afb4;
   --light: #7c827d;
   --dark: #6e756f;
   --breakpoint-xs: 0;
@@ -15,8 +15,6 @@
 
 .main-content {
   background-color: var(--eucalyptus);
-
-  
 }
 
 main {
@@ -29,6 +27,8 @@ a {
   text-decoration: none;
   color: #C4BDB1;
 }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
 
 /* Navigation bar */
 .nav-custom-styles {
@@ -44,7 +44,6 @@ a {
   display: flex;
   align-self: center;
 }
-
 /* most needed styles */
 
 .bg-eucalyptus {
@@ -52,7 +51,7 @@ a {
 }
 
 .bg-sagebrush {
-  background-color: #517470;
+  background-color: var(--sagebrush);
 }
 
 .bg-dark {
@@ -64,7 +63,7 @@ a {
 }
 
 .text_dark {
-  color: var(--dark);
+  color: var(--sagebrush);
 }
 
 .no-decoration {
@@ -72,10 +71,10 @@ a {
 }
 
 .primary-link {
-  color: white;
+  color: var(--sagebrush);
 }
 
-.primary-link:hover{
+.primary-link:hover {
   opacity: .5;
   color: #C4BDB1;
 }
@@ -104,7 +103,23 @@ a {
   padding: 100px 0px;
 }
 
+.txt-rotate {
+  color: var(--sagebrush);
+}
 
+.typed-cursor {
+  animation: blinker 1.2s linear infinite;
+  color: var(--sagebrush);
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+.project-img {
+  width: 100%;
+  height: 400px;
+}
 /* try out */
 
 .headerImageContent {
