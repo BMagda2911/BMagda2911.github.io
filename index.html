@@ -9,9 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="20">
     <div class="navbar-head">
-      <nav class="navbar navbar-expand-lg navbar-light nav-custom-styles">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-custom-styles">
         <div class="container">
           <a class="navbar-brand mobile-width" href="index.html">
             <img src="images/MB_logo.png" alt="website logo" class="rounded w-50 h-50 d-inline-block logo">
@@ -21,9 +21,9 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav text-white">
-              <a class="nav-item nav-link" href="#">About</a>
+              <a class="nav-item nav-link" href="#about">About</a>
               <a class="nav-item nav-link" href="#projects">Projects</a>
-              <a class="nav-item nav-link" href="#">Experience</a>
+              <a class="nav-item nav-link" href="#experience">Experience</a>
               <a class="nav-item nav-link" href="#contact">Contact</a>
             </div>
           </div>
@@ -31,155 +31,131 @@
       </nav>
     </div>
     <section>
-      <!-- <div class="container mb-3"> -->
         <div class="row">
           <div class="">
             <img src="images/ian-schneider-TamMbr4okv4-unsplash.jpg" alt="" class="img-fluid header-image haze-overlay">
             <div class="headerImageContent text-dark">
-              <h1>Hello, I'm Magdalena,</h1>
-              <h4>
-                a front-end web developer from Graz, Austria.
-              </h4>
-              <a href="#about" class="btn btn-lg bg-sagebrush primary-link mt-4 mb-4">Get to know me</a>
+                <h1 class="display-4 px-6">Turn your ideas into a
+                  <span
+                    class="txt-rotate"
+                    data-period="1000"
+                    data-rotate='[ "design.", "startup.", "reality.", "success." ]'></span><span class="typed-cursor">|</span>
+                </h1>
+              <div class="text-center mt-4 mb-4">
+                <a href="#about" class="primary-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </a>
+            </div>
             </div>
           </div>
         </div>
-      <!-- </div> -->
     </section>
-<main>
-    <div class="container-fluid main-content">
-      
 
-      <!-- about me section -->
-      <section id="about">
-        <div class="container about-container">
-          <div class="row d-flex">
-            <div class="col-md-6 col-lg-6 d-flex">
-              <div class="img-about img d-flex align-items-stretch">
-                <div class="d-flex align-self-stretch">
-                  <img src="images/Profile-img-Magda.jpg" alt="Profile image of Magdalena" style="width: 100%;">
+    <main>
+      <div class="container-fluid main-content">
+        <!-- about me section -->
+        <section>
+          <div class="container about-container" id="about">
+            <div class="row d-flex">
+              <div class="col-md-6 col-lg-6 d-flex">
+                <div class="img-about img d-flex align-items-stretch">
+                  <div class="d-flex">
+                    <img src="images/Profile-img-Magda.jpg" alt="Profile image of Magdalena" class="rounded-circle" style="width: 100%;">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-6 pl-md-5 py-5">
-              <div class="row justify-content-start pb-3">
-                <div class="col-md-12">
-                  <h2 class="mb-4">About Me</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus maximus augue ut commodo. Nam a tristique quam. Duis nec ligula nec sem elementum faucibus. Praesent odio purus, vehicula quis libero ac, venenatis interdum arcu. Aliquam gravida at purus et euismod. Nunc vulputate turpis ex, nec tempor mauris commodo non.</p>
-                  <ul class="about-info mt-4 px-md-0 px-2">
-                    <li class="d-flex"><span>Name:</span> <span>Magdalena Bijelic</span></li>
-                    <li class="d-flex"><span>Date of birth:</span> <span>November 29, 1991</span></li>
-                    <li class="d-flex"><span>City:</span> <span>Graz, Austria</span></li>
-                    <li class="d-flex"><span>Zip code:</span> <span>8020</span></li>
-                  </ul>
+              <div class="col-md-6 col-lg-6 pl-md-5 py-5">
+                <div class="row justify-content-start pb-3">
+                  <div class="col-md-12">
+                    <h2 class="mb-4">About Me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus maximus augue ut commodo. Nam a tristique quam. Duis nec ligula nec sem elementum faucibus. Praesent odio purus, vehicula quis libero ac, venenatis interdum arcu. Aliquam gravida at purus et euismod. Nunc vulputate turpis ex, nec tempor mauris commodo non.</p>
+                    <ul class="about-info mt-4 px-md-0 px-2">
+                      <li class="d-flex"><span>Name: </span> <span>Magdalena Bijelic</span></li>
+                      <li class="d-flex"><span>Date of birth: </span> <span>November 29, 1991</span></li>
+                      <li class="d-flex"><span>City: </span> <span>Graz, Austria</span></li>
+                      <li class="d-flex"><span>Zip code: </span> <span>8020</span></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="d-flex mt-md-3">
-                <div class="text">
-                  <p class="mb-4">
-                    <span class="number" data-number="10">10</span>
-                    <span>Projects completed</span>
-                  </p>
-                  <p><a href="#about" target="_blank" class="btn bg-sagebrush primary-link py-3 px-3">View my CV</a></p>
+                <div class="d-flex mt-md-3">
+                  <div class="text">
+                    <h2 class="mb-4">Certificates</h2>
+                    <ul class="list-unstyled my-3">
+                      <li class="d-flex align-items-center my-2">
+                        <span class="h6 mb-0 ml-2">Front End Web Development Techdegree by TeamTreehouse (coming soon)</span>
+                      </li>
+                      <li class="d-flex align-items-center my-2">
+                        <a href="images/Javaeinstieg2020_RecordOfAchievement.png" target="_blank" class="primary-link"><span class="h6 mb-0 ml-2">Object Oriented Programming in Java by Open HPI</span></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-
-      <!-- projects section -->
-      <section class="portfolio-project-cards">
+        <!-- projects section -->
+        <section class="portfolio-project-cards">
           <div class="container horizontal-spacer">
-            <div class="row mb-3" data-aos="fade-up">
-              <div class="col-md-7">
-                <a class="fade-page" href="home-coworking.html">
-                  <img src="https://picsum.photos/500/250" alt="Coworking" class="img-fluid rounded shadow-3d hover-shadow-3d border mb-3 mb-md-0">
+            <h2 class="mb-5" id="projects">Projects</h2>
+            <div class="row mb-5" data-aos="fade-up">
+              <div class="col-md-6">
+                <a class="fade-page" href="https://github.com/BMagda2911/Employee-Directory_v2.git">
+                  <img src="images/employee-directory_with-overlay.png" alt="employee directory" class="img-fluid rounded mb-3 mb-md-0 project-img">
                 </a>
               </div>
-              <div class="col">
+              <div class="col-md-6">
                 <div class="row">
                   <div class="col-xl-9 col-lg-10">
-                    <a href="home-coworking.html" class="fade-up">
-                      <h3 class="text_dark no-decoration">Coworking</h3>
+                    <a href="https://github.com/BMagda2911/Employee-Directory_v2.git" class="fade-up">
+                      <h3 class="text_dark">Employee directory</h3>
                     </a>
                     <p class="lead">
-                      PROJECT 1 DESCRIPTION.                    
+                      In this project, I used the Random User Generator API (https://randomuser.me/) to grab information for 12 random “employees” and use that data to build a prototype for an Awesome Startup employee directory. I requested a JSON object from the API using fetch and parse the data so that 12 employees are listed in a grid with their thumbnail image, full name, email, and location. Clicking the employee’s image or name opens a modal window with more detailed information, such as the employee’s birthday and address.              
                     </p>
-                    <ul class="list-unstyled my-3">
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Date picker</span>
-                      </li>
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Blog listing cards</span>
-                      </li>
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Fullscreen video lightbox</span>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="row mb-3" data-aos="fade-up">
-              <div class="col-md-7">
-                <a class="fade-page" href="home-coworking.html">
-                  <img src="https://picsum.photos/500/250" alt="Coworking" class="img-fluid rounded shadow-3d hover-shadow-3d border mb-3 mb-md-0">
+            <div class="row mb-5" data-aos="fade-up">
+              <div class="col-md-6">
+                <a class="fade-page" href="https://github.com/BMagda2911/web_app_dashboard_v3.2.git">
+                  <img src="images/Screenshot-Dashboard WebApp.png" alt="web app dashboard" class="img-fluid rounded mb-3 mb-md-0 project-img">
                 </a>
               </div>
               <div class="col">
                 <div class="row">
                   <div class="col-xl-9 col-lg-10">
-                    <a href="home-coworking.html" class="fade-up">
-                      <h3 class="text_dark no-decoration">Coworking</h3>
+                    <a href="https://github.com/BMagda2911/web_app_dashboard_v3.2.git" class="fade-up">
+                      <h3 class="text_dark">Web App Dashboard</h3>
                     </a>
                     <p class="lead">
-                      PROJECT 2 DESCRIPTION.
+                      In this project, I took a mockup and a few icons and built a web dashboard complete with JavaScript-driven charts and graphs. These charts are provided by Chart.js (https://www.chartjs.org/). This project was a bit more elaborate, as the requirement was to create a responsive web app with three different mockups and a mobile-first approach.
                     </p>
-                    <ul class="list-unstyled my-3">
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Date picker</span>
-                      </li>
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Blog listing cards</span>
-                      </li>
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Fullscreen video lightbox</span>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="row mb-3" data-aos="fade-up">
-              <div class="col-md-7">
-                <a class="fade-page" href="home-coworking.html">
-                  <img src="https://picsum.photos/500/250" alt="Coworking" class="img-fluid rounded shadow-3d hover-shadow-3d border mb-3 mb-md-0">
+            <div class="row mb-5" data-aos="fade-up">
+              <div class="col-md-6">
+                <a class="fade-page" href="https://github.com/BMagda2911/game-show-app_v1.2.git">
+                  <img src="images/Screenshot-Wheel of Success .png" alt="game show app" class="img-fluid rounded mb-3 mb-md-0 project-img">
                 </a>
               </div>
               <div class="col">
                 <div class="row">
                   <div class="col-xl-9 col-lg-10">
-                    <a href="home-coworking.html" class="fade-up">
-                      <h3 class="text_dark no-decoration">Coworking</h3>
+                    <a href="https://github.com/BMagda2911/game-show-app_v1.2.git" class="fade-up">
+                      <h3 class="text_dark">Game Show App</h3>
                     </a>
                     <p class="lead">
-                      PROJECT 3 DESCRIPTION.
+                      Here I created a browser version of <i>Wheel of Success</i>, a word guessing game. I used Javascript to come up with a random phrase that players will try to guess by entering different letters into the program.
                     </p>
-                    <ul class="list-unstyled my-3">
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Date picker</span>
-                      </li>
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Blog listing cards</span>
-                      </li>
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Fullscreen video lightbox</span>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -187,39 +163,28 @@
 
 
             <div class="row" data-aos="fade-up">
-              <div class="col-md-7">
-                <a class="fade-page" href="home-coworking.html">
-                  <img src="https://picsum.photos/500/250" alt="Coworking" class="img-fluid rounded shadow-3d hover-shadow-3d border mb-3 mb-md-0">
+              <div class="col-md-6 mb-5">
+                <a class="fade-page" href="https://github.com/BMagda2911/photo_gallery_v5.git">
+                  <img src="images/gallery_mockup.png" alt="photo gallery" class="img-fluid rounded shadow-3d hover-shadow-3d border mb-3 mb-md-0 project-img">
                 </a>
               </div>
-              <div class="col">
+              <div class="col mb-5">
                 <div class="row">
                   <div class="col-xl-9 col-lg-10">
-                    <a href="home-coworking.html" class="fade-up">
-                      <h3 class="text_dark no-decoration">Coworking</h3>
+                    <a href="https://github.com/BMagda2911/photo_gallery_v5.git" class="fade-up">
+                      <h3 class="text_dark">Photo gallery</h3>
                     </a>
                     <p class="lead">
-                      PROJECT 4 DESCRIPTION.
+                      This is an interactive photo gallery using JavaScript and CSS Grid Layout. Part of the project's requirements was using a plugin (BaguetteBox) and building a search filter. As the user types into the search input, only photos that match the caption text appear. Case insensitivity has been added, so searches will ignore letter case.
                     </p>
-                    <ul class="list-unstyled my-3">
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Date picker</span>
-                      </li>
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Blog listing cards</span>
-                      </li>
-                      <li class="d-flex align-items-center my-2">
-                        <span class="h6 mb-0 ml-2">Fullscreen video lightbox</span>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      </section>
-    </div>
-  </main>
+        </section>
+      </div>
+    </main>
 
     <!-- footer -->
     <footer class="page-footer bg-eucalyptus text-white overflow-hidden text-center">
@@ -249,5 +214,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="javascript/headerTextRotation.js"></script>
   </body>
 </html>
