@@ -1,8 +1,7 @@
 my signature colors from the logo
 eucalyptus sage green #9ca89e
 sagebrush #517470
-beige #C4BDB1
-
+tanglewood #C4BDB1
 
 color scheme: (here with SCSS)
 $primary-1: #799182;
@@ -31,6 +30,3 @@ hex
 #DDC9BE
 #344960
 #C6B8C9
-
-
-Keywords: Lift Leap Land
