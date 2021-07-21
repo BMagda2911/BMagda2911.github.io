@@ -1,6 +1,6 @@
 # captstone-portfolio-v2
 
-For my Capstone portfolio, I have mainly used Bootstrap 4 and the classic HTML, CSS and plain JavaScript.
+For my capstone portfolio, I have mainly used Bootstrap 4 and the classic HTML, CSS and plain JavaScript.
 I have repurposed the baguetteBox plugin which I had to use on Project 5 of my Techdegree (an interactive photo gallery).
 
 Credits go to:
