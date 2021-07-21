@@ -6,21 +6,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/mainStyles.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
+
   <body data-spy="scroll" data-target=".navbar">
     <div class="navbar-head">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-custom-styles">
-        <div class="container">
-          <a class="navbar-brand mobile-width" href="index.html">
-            <img src="images/magdalena-bijelic_logo.png" alt="website logo" class="rounded w-50 h-50 d-inline-block logo">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-custom">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/magdalena-bijelic_logo.png" alt="website logo" class="rounded d-inline-block logo mobile-logo-width">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav text-white">
+            <div class="navbar-nav mobile-center-text">
               <a class="nav-item nav-link" href="#about">About</a>
               <a class="nav-item nav-link" href="#experience">Experience</a>
               <a class="nav-item nav-link" href="#projects">Projects</a>
@@ -30,40 +32,40 @@
         </div>
       </nav>
     </div>
+
     <section>
-        <div class="row">
-          <div>
-            <img src="images/ian-schneider-TamMbr4okv4-unsplash.jpg" alt="" class="img-fluid header-image haze-overlay">
-            <div class="headerImageContent text-dark">
-              <h1 class="display-4 px-6">Turn your ideas into reality.</h1>
-              <div class="text-center mt-4 mb-4">
-                <a href="#about" class="primary-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                </a>
-            </div>
-            </div>
+      <div>
+        <img src="images/ian-schneider-TamMbr4okv4-unsplash.jpg" alt="" class="img-fluid header-image d-none d-lg-block haze-overlay">
+        <div class="headerImageContent d-none d-lg-block text-dark">
+          <h1 class="display-4 px-6">Turn your ideas into reality.</h1>
+          <div class="text-center mt-4 mb-4">
+            <a href="#about" class="primary-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </a>
           </div>
         </div>
+      </div>
     </section>
 
     <main>
-      <div class="container-fluid main-content">
+      <div class="container main-content">
+        
         <!-- about me section -->
         <section>
-          <div class="container-fluid about-container">
-            <div class="row d-flex">
-              <div class="col-sm-3 col-md-6 col-lg-6 d-flex">
-                <div class="img-about img d-flex align-items-stretch">
-                  <div class="d-flex">
-                    <img src="images/profile-img-Magda.jpg" alt="profile image of Magdalena" class="rounded-circle img-fluid" style="width: 100%;height: max-content;">
+          <div class="about-and-experience-container">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6 pl-md-5 py-5">
+                <div class="img align-items-stretch">
+                  <div class="profile-image">
+                    <img src="images/profile-img-Magda.jpg" alt="profile image of Magdalena" class="rounded-circle img-fluid">
                   </div>
                 </div>
               </div>
-              <div class="col-sm-3 col-md-6 col-lg-6 pl-md-5 py-5">
-                <div class="row justify-content-start pb-3">
-                  <div class="col-sm-3 col-md-12">
+              <div class="col-sm-12 col-lg-6 pl-md-5 py-5">
+                <div class="justify-content-start pb-3">
+                  <div class="col">
                     <h2 id="about" class="mb-4">About Me</h2>
                     <p>Hello!<br>I am Magdalena Bijelic, born on November 29, 1991 in Frankfurt, Germany.
                        I grew up in the small town Leibnitz, Austria, but lived and studied in Zagreb, Croatia, 
@@ -84,62 +86,85 @@
                 </div>
               </div>
             </div>
-            <div class="card mt-md-5"style="width: 100%;">
+            <div class="card mt-md-5">
               <div class="card-body">
                 <h2 class="card-title mb-4">Certificates</h2>
                 <ul class="list-unstyled my-3">
-                  <li class="d-flex align-items-center my-2">
-                    <span class="h6 mb-0 ml-2">Front End Web Development Techdegree by TeamTreehouse (online)(coming soon)</span>
+                  <li class="my-2">
+                    <span class="h6 mb-0 ml-2">Front End Web Development Techdegree by TeamTreehouse (online) (coming soon)</span>
                   </li>
-                  <li class="d-flex align-items-center my-2">
+                  <li class="my-2">
                    <span class="h6 mb-0 ml-2">Object Oriented Programming in Java by Open HPI (online)</span>
                   </li>
-                  <li class="d-flex align-items-center my-2">
+                  <li class="my-2">
                     <span class="h6 mb-0 ml-2">Coding Lab prep course in Java (local)</span>
                   </li>
                 </ul>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div class="horizontal-spacer"></div>
-
-            <div class="card mt-5" style="width: 100%;" id="experience">
+        <section>
+          <div class="card mt-5" id="experience">
+            <div class="card-body">
+              <h2 class="card-title">Experience</h2>
+              <img class="float-right d-none d-lg-block" src="images/svgs/undraw_programmer_imem.svg" alt="icon displaying female programmer" style="height: 150px;width: auto;">
+              <h6 class="card-subtitle mb-2 text-muted">Working at recordIT GmbH in Graz</h6>
+              <p class="card-text lead">My responsibilities at recordIT GmbH first included the implementation of templates that are based on <a href="https://docxtemplater.com/" class="primary-link">DocxTemplater</a> with the Mustache inspired syntax, into the software startup "recordIT", which requires abstract thinking skills and precise work.
+                Templates are created in Microsoft Word or other software that can save docx files.
+                I learned the techniques for this and updated and improved the documentation while working. Afterwards, I took over the implementation of the new recordIT homepage. Thereby, I handled communication
+                with the graphic designer, the copywriter, other developers and the management and took a leading role in the project on my own initiative. 
+                I learned working with the frameworks VueJS and Quasar, which were foreign to me until then, on my own, without much support.
+              </p>
+              <a href="https://recordit.at/" class="primary-link">View current recordIT website</a><br>
+              <span>New website coming live soon</span>
+            </div>
+            <div class="card border-light">
               <div class="card-body">
-                <h2 class="card-title">Experience</h2>
-                <img class="float-right" src="images/svgs/undraw_programmer_imem.svg" alt="icon displaying female programmer" style="height: 150px;width: auto;">
-                <h6 class="card-subtitle mb-2 text-muted">Working at recordIT GmbH in Graz</h6>
-                <p class="card-text lead">My responsibilities at recordIT GmbH first included the implementation of templates that are based on <a href="https://docxtemplater.com/" class="primary-link">DocxTemplater</a> with the Mustache inspired syntax, into the software startup "recordIT", which requires abstract thinking skills and precise work.
-                  Templates are created in Microsoft Word or other software that can save docx files.
-                  I learned the techniques for this and updated and improved the documentation while working. Afterwards, I took over the implementation of the new recordIT homepage. Thereby, I handled communication
-                  with the graphic designer, the copywriter, other developers and the management and took a leading role in the project on my own initiative. 
-                  I learned working with the frameworks VueJS and Quasar, which were foreign to me until then, on my own, without much support.
-                </p>
-                <a href="https://recordit.at/" class="primary-link">View current recordIT website</a><br>
-                <span>New website coming soon</span>
+                <h4 class="card-title">Work Project Gallery</h4>
+                <p class="card-text text-muted">Click on the thumbnails below to open the gallery and see a few screenshots of my real life work at recordIT.</p>
+                <div class="workGallery">
+                  <a href="images/workGallery/screenshot01_RecordIT Website.png">
+                    <img src="images/workGallery/homepage-as-thumbnail.png" alt="recordIT homepage preview" style="width: 100%; height: auto;">
+                  </a>
+                  <a href="images/workGallery/screenshot02_RecordIT Website.png">  
+                    <img src="images/workGallery/homepage-as-thumbnail.png" alt="recordIT homepage preview" style="width: 100%; height: auto;">
+                  </a>
+                  <a href="images/workGallery/screenshot03_RecordIT Website.png">
+                    <img src="images/workGallery/homepage-as-thumbnail.png" alt="recordIT homepage preview" style="width: 100%; height: auto;">
+                  </a>
+                  <a href="images/workGallery/screenshot04_RecordIT Website.png">
+                    <img src="images/workGallery/homepage-as-thumbnail.png" alt="recordIT homepage preview" style="width: 100%; height: auto;">
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <!-- projects section -->
-        <section class="portfolio-project-cards" id="projects">
-          <div class="container-fluid horizontal-spacer">
+        <section class="portfolio-project-cards-container" id="projects">
+          <div class="mt-5">
             <h2 class="mb-5">Projects</h2>
             <div class="row mb-5">
               <div class="col-sm-3 col-md-6">
                 <a href="https://github.com/BMagda2911/Employee-Directory_v2.git" title="View code on Github">
-                  <img src="images/employee-directory_with-overlay.png" alt="employee directory" class="img-fluid rounded mb-3 mb-md-0 project-img">
+                  <img src="images/employee-directory_with-overlay.png" alt="employee directory" class="img-fluid rounded mb-3 mb-md-0">
                 </a>
               </div>
               <div class="col-sm-3 col-md-6">
                 <div class="row">
-                  <div class="col-xl-9 col-lg-10">
+                  <div class="col-lg-12">
                     <a href="https://github.com/BMagda2911/Employee-Directory_v2.git">
                       <h3 class="text_sagebrush">Employee directory</h3>
                     </a>
                     <img src="images/svgs/undraw_static_assets_rpm6.svg" alt="icon displaying css js and html" style="height: 100px;width: auto;">
                     <p class="lead">
-                      In this project, I used the Random User Generator API <a href="https://randomuser.me/" class="primary-link">(https://randomuser.me/)</a> to grab information for 12 random “employees” and use that data to build a prototype for an Awesome Startup employee directory. I requested a JSON object from the API using fetch and parse the data so that 12 employees are listed in a grid with their thumbnail image, full name, email, and location. Clicking the employee’s image or name opens a modal window with more detailed information, such as the employee’s birthday and address.              
+                      In this project, I used the Random User Generator API <a href="https://randomuser.me/" class="primary-link">(https://randomuser.me/)</a> 
+                      to grab information for 12 random “employees” and used that data to build a prototype for an Awesome Startup employee directory. 
+                      I requested a JSON object from the API using fetch and parse the data so that 12 employees are listed in a grid with their thumbnail image, full name, email, and location. 
+                      Clicking the employee’s image or name opens a modal window with more detailed information, such as the employee’s birthday and address.              
                     </p>
                     <a class="btn btn-outline-light" href="https://bmagda2911.github.io/Employee-Directory_v2/" target="_blank">View Live</a>
                   </div>
@@ -150,18 +175,19 @@
             <div class="row mb-5">
               <div class="col-sm-3 col-md-6">
                 <a href="https://github.com/BMagda2911/web_app_dashboard_v3.2.git" title="View code on Github">
-                  <img src="images/croppedScreenshot_Dashboard WebApp.png" alt="web app dashboard" class="img-fluid rounded mb-3 mb-md-0 project-img">
+                  <img src="images/croppedScreenshot_Dashboard WebApp.png" alt="web app dashboard" class="img-fluid rounded mb-3 mb-md-0">
                 </a>
               </div>
               <div class="col">
                 <div class="row">
-                  <div class="col-xl-9 col-lg-10">
+                  <div class="col-lg-12">
                     <a href="https://github.com/BMagda2911/web_app_dashboard_v3.2.git">
                       <h3 class="text_sagebrush">Web App Dashboard</h3>
                     </a>
                     <img src="images/svgs/undraw_static_assets_rpm6.svg" alt="icon displaying css js and html" style="height: 100px;width: auto;">
                     <p class="lead">
-                      In this project, I took a mockup and a few icons and built a web dashboard complete with JavaScript-driven charts and graphs. These charts are provided by Chart.js <a href="https://www.chartjs.org/" class="primary-link">(https://www.chartjs.org/)</a>. This project was a bit more elaborate, as the requirement was to create a responsive web app with three different mockups and a mobile-first approach.
+                      In this project, I took a mockup and a few icons and built a web dashboard complete with JavaScript-driven charts and graphs. These charts are provided by Chart.js <a href="https://www.chartjs.org/" class="primary-link">(https://www.chartjs.org/)</a>. 
+                      This project was a bit more elaborate, as the requirement was to create a responsive web app with three different mockups and a mobile-first approach.
                     </p>
                     <a class="btn btn-outline-light" href="https://bmagda2911.github.io/web_app_dashboard_v3.2/" target="_blank">View Live</a>
                   </div>
@@ -172,12 +198,12 @@
             <div class="row mb-5">
               <div class="col-sm-3 col-md-6">
                 <a href="https://github.com/BMagda2911/game-show-app_v1.2.git" title="View code on Github">
-                  <img src="images/screenshot-Wheel of Success .png" alt="game show app" class="img-fluid rounded mb-3 mb-md-0 project-img">
+                  <img src="images/screenshot-Wheel of Success .png" alt="game show app" class="img-fluid rounded mb-3 mb-md-0">
                 </a>
               </div>
               <div class="col">
                 <div class="row">
-                  <div class="col-xl-9 col-lg-10">
+                  <div class="col-lg-12">
                     <a href="https://github.com/BMagda2911/game-show-app_v1.2.git">
                       <h3 class="text_sagebrush">Game Show App</h3>
                     </a>
@@ -191,16 +217,15 @@
               </div>
             </div>
 
-
             <div class="row">
               <div class="col-sm-3 col-md-6 mb-5">
                 <a href="https://github.com/BMagda2911/photo_gallery_v5.git" title="View code on Github">
-                  <img src="images/gallery_mockup.png" alt="photo gallery" class="img-fluid rounded shadow-3d hover-shadow-3d border mb-3 mb-md-0 project-img">
+                  <img src="images/gallery_mockup.png" alt="photo gallery" class="img-fluid rounded shadow-3d hover-shadow-3d border mb-3 mb-md-0">
                 </a>
               </div>
               <div class="col mb-5">
                 <div class="row">
-                  <div class="col-xl-9 col-lg-10">
+                  <div class="col-lg-12">
                     <a href="https://github.com/BMagda2911/photo_gallery_v5.git">
                       <h3 class="text_sagebrush">Photo gallery</h3>
                     </a>
@@ -215,6 +240,7 @@
             </div>
           </div>
         </section>
+
       </div>
     </main>
 
@@ -227,10 +253,10 @@
               <img src="images/svgs/undraw_confidential_letter_w6ux.svg" alt="girl holding a large letter" style="height: 200px; width: auto;">
             </li>
             <li class="nav-item">
-                <a href="mailto:magdalenabijelic@gmail.com" class="nav-link h4 mt-8 mt-md-0 primary-link">magdalenabijelic@gmail.com</a>
+              <a href="mailto:magdalenabijelic@gmail.com" class="nav-link h5 mt-8 mt-md-0 primary-link">magdalenabijelic@gmail.com</a>
             </li>
           </ul>
-          <p>Follow my work on Github or look me up on LinkedIn</p>
+          <p>Follow my work on Github<br>or look me up on LinkedIn</p>
           <ul class="nav nav-social nav-gap-sm align-items-center justify-content-center mb-30">
             <li class="nav-item">
               <a href="https://github.com/BMagda2911">
@@ -250,5 +276,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="javascript/eventHandler.js"></script>
+    <script src="javascript/baguetteBox.min.js"></script>
   </body>
 </html>
