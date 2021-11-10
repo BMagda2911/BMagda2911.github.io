@@ -118,10 +118,34 @@ a:active { text-decoration: none; }
   .mobile-center-text {
     text-align: center;
   }
-
   .profile-image {
     width: 260px;
     height: auto;
     margin: 0 auto;
+  }
+}
+
+@media ( min-width: 992px ) {
+  .profile-image img{
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+    height: auto;
+  }
+  .profile-image:hover img:nth-child(4) {
+    transform: translate(120px, -120px);
+    opacity: 1;
+  }
+  .profile-image:hover img:nth-child(3) {
+    transform: translate(90px, -90px);
+    opacity: 0.8;
+  }
+  .profile-image:hover img:nth-child(2) {
+    transform: translate(60px, -60px);
+    opacity: 0.6;
+  }
+  .profile-image:hover img:nth-child(1) {
+    transform: translate(30px, -30px);
+    opacity: 0.4;
   }
 }
