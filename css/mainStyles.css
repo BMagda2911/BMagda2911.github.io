@@ -70,10 +70,10 @@ a:active { text-decoration: none; }
   width: 100%;
 } 
 
-.profile-image {
+/* .profile-image {
   width: 100%;
   height: auto;
-}
+} */
 
 .portfolio-project-cards-container {
   margin-top: 50px;
@@ -128,7 +128,7 @@ a:active { text-decoration: none; }
 @media ( min-width: 992px ) {
   .profile-image img{
     position: absolute;
-    width: 100%;
+    width: 90%; /*was 100% */
     transition: 0.5s;
     height: auto;
   }
