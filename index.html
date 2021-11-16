@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="css/typewriter.css">
     <link rel="stylesheet" href="css/baguetteBox.min.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">  <body data-spy="scroll" data-target=".navbar">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Typewriter JS for faster rendering of this feature -->
+    <script src="javascript/typewriter.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
     <div class="navbar-head">
       <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-custom">
         <div class="container d-flex justify-content-between">
@@ -52,7 +56,7 @@
         
         <!-- about me section -->
         <section>
-          <div class="about-and-experience-container">
+          <div class="about-and-experience-container" id="about">
             <div class="row">
               <div class="col-md-12 col-lg-5 px-4 pt-5">
                 <div class="img align-items-stretch">
@@ -67,7 +71,7 @@
               <div class="col-md-12 col-lg-7 pr-4 pl-0">
                 <div class="justify-content-start pb-3">
                   <div class="col pl-lg-0">
-                    <h2 id="about" class="mb-2 mt-3">About Me</h2>
+                    <h2 class="mb-2 mt-3">About Me</h2>
                     <p>Hi!<br>If you’ve made it to my creative corner of the internet, I must have told you about it. 
                       I’m happy you’re here and welcome!<br>I’m Magdalena, a passionate individual, a life-long learner by day and a skilful DIYer by nightfall.
                     </p>
@@ -111,9 +115,12 @@
         </section>
 
         <section>
-          <div class="card mt-5" id="experience">
+          <div class="card mt-5" >
             <div class="card-body">
-              <h2 class="card-title">Experience</h2>
+              <h2 class="card-title position-relative">
+                <div id="experience" class="position-absolute" style="top: -100px;"></div>
+                Experience
+              </h2>
               <h6 class="card-subtitle mb-2 text-muted">Working at recordIT GmbH &amp; Midlight GmbH in Graz</h6>
               <p>My responsibilities at recordIT GmbH first included the implementation of templates that are based on <a href="https://docxtemplater.com/" class="primary-link">DocxTemplater</a> with the Mustache inspired syntax, into the software startup "recordIT", which requires abstract thinking skills and precise work.
                 Templates are created in Microsoft Word or other software that can save docx files.
@@ -186,10 +193,12 @@
         </section>
 
         <!-- projects section -->
-        <section class="portfolio-project-cards-container" id="projects">
+        <section class="portfolio-project-cards-container">
           <div class="mt-5">
-            <h2 class="mb-5">Projects</h2>
-
+            <h2 class="mb-5 position-relative">
+              <div id="projects" class="position-absolute" style="top: -100px;"></div>
+              Projects
+            </h2>
             <div class="row mb-5">
               <div class="col-sm-3 col-md-6">
                 <img src="images/to-do-list-screenshot.png" class="img-fluid rounded mb-3 mb-md-0">
@@ -200,10 +209,10 @@
                     <h3 class="text_sagebrush">To-Do List</h3>
                     <img src="images/undraw_jQuery.png" alt="icon displaying wordpress" style="height: 45px;width: auto;">
                     <p class="lead">
-                      My simple to-do list web app was build with jQuery and Bootstrap, combined with HTML5 and CSS3. It was a first dive into
-                       how to work with what jQuery has to offer. So far I have only worked with local storage in this app.
+                      My simple to-do list web app was build with Bootstrap and jQuery, combined with HTML5 and CSS3. It was a dive into
+                       how to work with what jQuery has to offer.
                     </p>
-                    <a class="btn btn-outline-light" href="" target="_blank">Coming live soon</a>
+                    <a class="btn btn-outline-light" href="https://bmagda2911.github.io/to-do-list/" target="_blank">View Live</a>
                   </div>
                 </div>
               </div>
@@ -358,7 +367,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="javascript/eventHandler.js"></script>
-    <script src="javascript/typewriter.js"></script>
     <script src="javascript/baguetteBox.min.js"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
   </body>
